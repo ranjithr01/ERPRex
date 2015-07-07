@@ -53,7 +53,7 @@ edit:function()
 	},
 
 	
-	remove:function()
+	remove1:function()
 	{
 		
 	},
