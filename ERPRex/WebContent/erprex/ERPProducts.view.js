@@ -134,7 +134,7 @@ sap.ui.jsview("erprex.ERPProducts", {
 			template:new sap.ui.commons.TextView({text:"{products>Description}"})
 			
 		}));
-			oTable.bindRows("products>/Product");
+			oTable.bindRows("products>/Products");
 		var ele=[oMatrix,oLayout,oTable];
 		return ele;
 	
