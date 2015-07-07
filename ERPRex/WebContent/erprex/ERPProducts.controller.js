@@ -44,10 +44,23 @@ sap.ui.getCore().setModel(oModel,"products");
 //	onExit: function() {
 //
 //	},
-	
+	mode:0,
+	resetForm:function(){
+		$('#name').val('');
+		$('#description').val('');
+		$('#price').val('');
+		$('#rating'),val('');
+		$('#id'),val('');
+		
+	},
 	create:function()
 	{
-	alert("helo");	
+	this.mode='create';
+	this.resetForm();
+	$('#formId').slideDown(300,function(){
+		var id=sap.ui.getCore().byId('tableId').getRowCount();
+		$('#id').val(id);
+	});
 	},
 
 edit:function()
@@ -55,7 +68,7 @@ edit:function()
 	},
 
 	
-	remove1:function()
+	remove:function()
 	{
 		
 	},
